@@ -8,7 +8,8 @@ from supabase import create_client, Client
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+# Allow requests from local development and the deployed GitHub Pages frontend
+CORS(app, resources={r"/*": {"origins": ["http://127.0.0.1:5500", "http://localhost:5500", "https://gunj-tibrewala.github.io"]}})
 
 url: str = os.environ.get("SUPABASE_URL", "")
 key: str = os.environ.get("SUPABASE_KEY", "")
