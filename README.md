@@ -1,6 +1,6 @@
-# EventHive - Backend
+# Event Hive - Backend
 
-This is the backend repository for the EventHive application, built for academic submission. It is a RESTful API built with Flask that connects to a Supabase PostgreSQL database to store and manage event data.
+This is the backend repository for the Event Hive application, built for academic submission. It is a RESTful API built with Flask that connects to a Supabase PostgreSQL database to store and manage event data.
 
 ## Team Members
 * Gunj Tibrewala
